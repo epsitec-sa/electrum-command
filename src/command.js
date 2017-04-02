@@ -1,6 +1,6 @@
 /******************************************************************************/
 
-export default function Command (name, handler) {
+export function Command (name, handler) {
   const f = function (args0) {
     const c = function (...args1) {
       if (!handler) {
