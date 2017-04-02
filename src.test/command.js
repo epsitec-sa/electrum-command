@@ -1,4 +1,5 @@
-'use strict';
+/* global describe it */
+/* eslint new-cap: 0 */
 
 import {expect} from 'mai-chai';
 import Command from 'electrum-command';

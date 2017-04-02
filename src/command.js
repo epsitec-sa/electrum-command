@@ -1,26 +1,24 @@
-'use strict';
-
 /******************************************************************************/
 
 export default function Command (name, handler) {
-  const f = function (args) {
-    const c = function (...args) {
+  const f = function (args0) {
+    const c = function (...args1) {
       if (!handler) {
         throw new Error (`Command ${name} does not define a command handler`);
       }
-      handler (c.info, ...args);
+      handler (c.info, ...args1);
     };
     c.info = {};
     c.factory = f;
-    const defineParams = function (args) {
-      for (let key in args) {
-        if (args.hasOwnProperty (key)) {
-          c.info[key] = args[key];
+    const defineParams = function (args2) {
+      for (let key in args2) {
+        if (args2.hasOwnProperty (key)) {
+          c.info[key] = args2[key];
         }
       }
       return defineParams;
     };
-    defineParams (args);
+    defineParams (args0);
     defineParams.type = name;
     defineParams.run = c;
     return defineParams;
