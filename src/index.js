@@ -1,6 +1,6 @@
 /******************************************************************************/
 
-import Command from './command.js';
-export default Command;
+import {Command} from './command.js';
+export {Command};
 
 /******************************************************************************/

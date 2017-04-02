@@ -2,7 +2,7 @@
 /* eslint new-cap: 0 */
 
 import {expect} from 'mai-chai';
-import Command from 'electrum-command';
+import {Command} from 'electrum-command';
 
 /******************************************************************************/
 
