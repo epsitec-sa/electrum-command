@@ -23,6 +23,7 @@
     "generic-js-env": "^2.2.0",
     "mai-chai": "^3.3.2",
     "react": "^15.4.2",
+    "react-dom": "^15.4.2",
     "require-self": "^0.1.0",
     "rimraf": "^2.6.1"
   }
